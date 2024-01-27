@@ -1,0 +1,10 @@
+terrafoerm state list -> Lists out all the resources that are tracked in the current state file
+
+terraform refresh -> command reads the current settings from all managed remote objects and updates the Terraform state to match. This won't modify your real remote objects, but it will modify the Terraform state
+
+terraform destroy -target aws_instance.web_server -> this will only destory the resource that has been specified
+
+terraform state pull > state.tfstate -> Gets the current state and outputs it to a local file. This will create a file named state.tfstate with the contents of the terraform.tfstate file copied into it.
+
+terraform output —> List all the outputs currently held in your state file
+

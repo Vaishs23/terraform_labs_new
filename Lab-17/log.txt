@@ -1,0 +1,12 @@
+Terraform START:
+Terraform START: Sun Dec 10 19:39:33 GMT 2023
+Terraform START: Sun Dec 10 19:40:13 GMT 2023
+Terraform START: Sun Dec 10 20:19:42 GMT 2023
+172.31.32.114
+Terraform START: Sun Dec 10 20:24:13 GMT 2023
+172.31.41.180
+Terraform START: Sun Dec 10 20:26:18 GMT 2023
+172.31.34.104
+Terraform FINISH: Sun Dec 10 20:26:34 GMT 2023
+Terraform START: Sun Dec 10 20:28:23 GMT 2023
+172.31.47.97
