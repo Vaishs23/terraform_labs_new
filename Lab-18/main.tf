@@ -24,18 +24,19 @@ resource "aws_instance" "myserver" {
     Owner = local.Owner_name
   }
   provisioner "remote-exec" {
-    inline = [ 
-        "mkdir /home/ec2-user/terraform",
-        "cd /home/ec2-user/terraform",
-        "touch hello.txt",
-        "echo 'Terraform was here...' > terraform.txt"
-     ]
-     connection {
-       type = "ssh"
-       user = "ec2-user"
-       host = self.public_ip //same as -> aws_instance.myserver.public_ip
-       private_key = file("musa-key-ca-central-1.pem")
-     }
+    //inline = This is a list of command strings
+    inline = [
+      "mkdir /home/ec2-user/terraform",
+      "cd /home/ec2-user/terraform",
+      "touch hello.txt",
+      "echo 'Terraform was here...' > terraform.txt"
+    ]
+    connection {
+      type        = "ssh"
+      user        = "ec2-user"
+      host        = self.public_ip //same as -> aws_instance.myserver.public_ip
+      private_key = file("musa-key-ca-central-1.pem")
+    }
   }
 }
 
@@ -55,7 +56,7 @@ resource "aws_security_group" "web" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "SG by Terraform"
+    Name  = "SG by Terraform"
     Owner = local.Owner_name
   }
 }

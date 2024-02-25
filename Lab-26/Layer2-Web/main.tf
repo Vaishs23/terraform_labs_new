@@ -6,9 +6,9 @@ provider "aws" {
 //use this terraform {} to store a state remotely
 terraform {
   backend "s3" {
-    bucket = "adv-it-terraform-remote-statee" //bucket where to save tfstate file
-    key    = "dev/webserver/terraform.tfstate"  //object name in the bucket to save the terraform state
-    region = "eu-north-1"                     //region where the bucket was created in
+    bucket = "adv-it-terraform-remote-statee"  //bucket name where to save tfstate file
+    key    = "dev/webserver/terraform.tfstate" //object name path in the bucket to save the terraform state
+    region = "eu-north-1"                      //region where the bucket was created in
   }
 }
 //create more terraform blocks like this if you have more layers and need to references resources in different layers
@@ -25,8 +25,6 @@ data "terraform_remote_state" "vpc" {
     region = "eu-north-1"                     //region where the bucket was created in
   }
 }
-
-
 
 
 data "aws_ami" "latest_amazon_linux" {

@@ -55,6 +55,8 @@ resource "aws_launch_configuration" "web" {
   }
 }
 
+//An ASG is a logical grouping of EC2 instances running the same configuration.
+//ASGs allow for dynamic scaling and make it easier to manage a group of instances that host the same services.
 resource "aws_autoscaling_group" "web" {
   name                 = "ASG-${aws_launch_configuration.web.name}"
   launch_configuration = aws_launch_configuration.web.name

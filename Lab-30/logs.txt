@@ -1,0 +1,44 @@
+2024-02-05T18:17:55.011Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:17:55.012Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:17:55.012Z [INFO]  CLI args: []string{"terraform", "show"}
+2024-02-05T18:17:55.014Z [INFO]  CLI command args: []string{"show"}
+2024-02-05T18:17:55.617Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T18:17:55.799Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T18:17:55.799Z
+2024-02-05T18:18:26.087Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:18:26.089Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:18:26.089Z [INFO]  CLI args: []string{"terraform", "state", "list"}
+2024-02-05T18:18:26.089Z [INFO]  CLI command args: []string{"state", "list"}
+2024-02-05T18:20:02.848Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:20:02.848Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:20:02.848Z [INFO]  CLI args: []string{"terraform", "state", "show", "aws_security_group.name"}
+2024-02-05T18:20:02.849Z [INFO]  CLI command args: []string{"state", "show", "aws_security_group.name"}
+2024-02-05T18:20:03.106Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T18:20:03.215Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T18:20:03.215Z
+2024-02-05T18:21:16.016Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:21:16.017Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:21:16.017Z [INFO]  CLI args: []string{"terraform", "show"}
+2024-02-05T18:21:16.017Z [INFO]  CLI command args: []string{"show"}
+2024-02-05T18:21:16.474Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T18:21:16.568Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T18:21:16.567Z
+2024-02-05T18:21:22.416Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:21:22.416Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:21:22.416Z [INFO]  CLI args: []string{"terraform", "show", "-json"}
+2024-02-05T18:21:22.417Z [INFO]  CLI command args: []string{"show", "-json"}
+2024-02-05T18:21:22.876Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T18:21:22.971Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T18:21:22.971Z
+2024-02-05T21:16:53.295Z [INFO]  Terraform version: 1.6.6
+2024-02-05T21:16:53.296Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T21:16:53.296Z [INFO]  CLI args: []string{"terraform", "state", "list"}
+2024-02-05T21:16:53.298Z [INFO]  CLI command args: []string{"state", "list"}
+2024-02-05T21:16:57.338Z [INFO]  Terraform version: 1.6.6
+2024-02-05T21:16:57.338Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T21:16:57.338Z [INFO]  CLI args: []string{"terraform", "show"}
+2024-02-05T21:16:57.339Z [INFO]  CLI command args: []string{"show"}
+2024-02-05T21:16:57.823Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T21:16:57.974Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T21:16:57.974Z
+2024-02-05T21:17:19.422Z [INFO]  Terraform version: 1.6.6
+2024-02-05T21:17:19.423Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T21:17:19.423Z [INFO]  CLI args: []string{"terraform", "state", "show", "aws_security_group.name"}
+2024-02-05T21:17:19.423Z [INFO]  CLI command args: []string{"state", "show", "aws_security_group.name"}
+2024-02-05T21:17:19.665Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T21:17:19.758Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T21:17:19.758Z

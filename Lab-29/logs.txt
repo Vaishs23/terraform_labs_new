@@ -1,0 +1,102 @@
+2024-02-05T18:04:24.208Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:04:24.208Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:04:24.208Z [INFO]  CLI args: []string{"terraform", "fmt", "-check"}
+2024-02-05T18:04:24.209Z [INFO]  CLI command args: []string{"fmt", "-check"}
+2024-02-05T18:04:43.674Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:04:43.674Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:04:43.674Z [INFO]  CLI args: []string{"terraform", "fmt", "-check"}
+2024-02-05T18:04:43.675Z [INFO]  CLI command args: []string{"fmt", "-check"}
+2024-02-05T18:05:30.007Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:05:30.007Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:05:30.007Z [INFO]  CLI args: []string{"terraform", "fmt", "-diff"}
+2024-02-05T18:05:30.013Z [INFO]  CLI command args: []string{"fmt", "-diff"}
+2024-02-05T18:05:54.312Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:05:54.312Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:05:54.312Z [INFO]  CLI args: []string{"terraform", "fmt", "-check", "-recursive"}
+2024-02-05T18:05:54.313Z [INFO]  CLI command args: []string{"fmt", "-check", "-recursive"}
+2024-02-05T22:29:10.860Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:29:10.861Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:29:10.861Z [INFO]  CLI args: []string{"terraform", "plan", "-refresh-only"}
+2024-02-05T22:29:10.862Z [INFO]  CLI command args: []string{"plan", "-refresh-only"}
+2024-02-05T22:29:10.880Z [INFO]  backend/local: starting Plan operation
+2024-02-05T22:29:22.819Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:29:22.820Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:29:22.820Z [INFO]  CLI args: []string{"terraform", "init"}
+2024-02-05T22:29:22.820Z [INFO]  CLI command args: []string{"init"}
+2024-02-05T22:29:43.119Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:29:43.119Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:29:43.119Z [INFO]  CLI args: []string{"terraform", "plan", "-refresh-only"}
+2024-02-05T22:29:43.120Z [INFO]  CLI command args: []string{"plan", "-refresh-only"}
+2024-02-05T22:29:43.362Z [INFO]  backend/local: starting Plan operation
+2024-02-05T22:29:43.366Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:29:46.691Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:29:46.690Z
+2024-02-05T22:29:47.164Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:29:47.268Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:29:47.268Z
+2024-02-05T22:29:47.350Z [INFO]  backend/local: plan calling Plan
+2024-02-05T22:29:47.352Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:29:47.449Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:29:47.448Z
+2024-02-05T22:29:47.524Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: Retrieved credentials: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.46/logging/tf_logger.go:39 @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e06244a6-7719-0b5f-09ce-2e3fc5bff4eb tf_aws.credentials_source=EnvConfigCredentials tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp=2024-02-05T22:29:47.524Z
+2024-02-05T22:29:48.231Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.46/logging/tf_logger.go:39 tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=e06244a6-7719-0b5f-09ce-2e3fc5bff4eb timestamp=2024-02-05T22:29:48.231Z
+2024-02-05T22:29:48.249Z [INFO]  backend/local: plan operation completed
+2024-02-05T22:30:10.636Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:30:10.637Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:30:10.637Z [INFO]  CLI args: []string{"terraform", "apply", "-refresh-only"}
+2024-02-05T22:30:10.637Z [INFO]  CLI command args: []string{"apply", "-refresh-only"}
+2024-02-05T22:30:10.868Z [INFO]  backend/local: starting Apply operation
+2024-02-05T22:30:10.871Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:30:10.970Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:30:10.969Z
+2024-02-05T22:30:11.388Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:30:11.486Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:30:11.486Z
+2024-02-05T22:30:11.560Z [INFO]  backend/local: apply calling Plan
+2024-02-05T22:30:11.561Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:30:11.658Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:30:11.658Z
+2024-02-05T22:30:11.727Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: Retrieved credentials: @module=aws.aws-base tf_provider_addr=registry.terraform.io/hashicorp/aws @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.46/logging/tf_logger.go:39 tf_aws.credentials_source=EnvConfigCredentials tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=a81df7f0-1ae3-cf28-56c0-a76baad76e3f tf_rpc=ConfigureProvider timestamp=2024-02-05T22:30:11.727Z
+2024-02-05T22:30:12.378Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: Retrieved caller identity from STS: tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=a81df7f0-1ae3-cf28-56c0-a76baad76e3f @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.46/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider timestamp=2024-02-05T22:30:12.378Z
+2024-02-05T22:30:12.439Z [INFO]  backend/local: apply calling Apply
+2024-02-05T22:31:33.661Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:31:33.661Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:31:33.661Z [INFO]  CLI args: []string{"terraform", "plan", "-h"}
+2024-02-05T22:31:33.662Z [INFO]  CLI command args: []string{"plan", "-h"}
+2024-02-05T22:31:44.640Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:31:44.640Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:31:44.640Z [INFO]  CLI args: []string{"terraform", "plan", "-help"}
+2024-02-05T22:31:44.641Z [INFO]  CLI command args: []string{"plan", "-help"}
+2024-02-05T22:31:47.725Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:31:47.726Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:31:47.726Z [INFO]  CLI args: []string{"terraform", "plan", "--help"}
+2024-02-05T22:31:47.727Z [INFO]  CLI command args: []string{"plan", "--help"}
+2024-02-05T22:34:28.959Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:34:28.959Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:34:28.959Z [INFO]  CLI args: []string{"terraform", "plan", "-target={}"}
+2024-02-05T22:34:28.960Z [INFO]  CLI command args: []string{"plan", "-target={}"}
+2024-02-05T22:35:06.661Z [INFO]  Terraform version: 1.6.6
+2024-02-05T22:35:06.662Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T22:35:06.662Z [INFO]  CLI args: []string{"terraform", "plan", "-target=aws_instance.node1"}
+2024-02-05T22:35:06.663Z [INFO]  CLI command args: []string{"plan", "-target=aws_instance.node1"}
+2024-02-05T22:35:06.959Z [INFO]  backend/local: starting Plan operation
+2024-02-05T22:35:06.969Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:35:07.064Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:35:07.064Z
+2024-02-05T22:35:07.471Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:35:07.575Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:35:07.574Z
+2024-02-05T22:35:07.653Z [INFO]  backend/local: plan calling Plan
+2024-02-05T22:35:07.654Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T22:35:07.765Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T22:35:07.765Z
+2024-02-05T22:35:07.847Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: Retrieved credentials: tf_aws.credentials_source=EnvConfigCredentials tf_provider_addr=registry.terraform.io/hashicorp/aws tf_rpc=ConfigureProvider @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.46/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_req_id=e0433675-434e-59d5-ee17-7db2957ac26d timestamp=2024-02-05T22:35:07.847Z
+2024-02-05T22:35:08.536Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: Retrieved caller identity from STS: @caller=github.com/hashicorp/aws-sdk-go-base/v2@v2.0.0-beta.46/logging/tf_logger.go:39 @module=aws.aws-base tf_mux_provider="*schema.GRPCProviderServer" tf_rpc=ConfigureProvider tf_provider_addr=registry.terraform.io/hashicorp/aws tf_req_id=e0433675-434e-59d5-ee17-7db2957ac26d timestamp=2024-02-05T22:35:08.536Z
+2024-02-05T22:35:08.549Z [WARN]  Provider "registry.terraform.io/hashicorp/aws" produced an invalid plan for aws_instance.node1, but we are tolerating it because it is using the legacy plugin SDK.
+    The following problems may be the cause of any confusing errors from downstream operations:
+      - .source_dest_check: planned value cty.True for a non-computed attribute
+      - .user_data_replace_on_change: planned value cty.False for a non-computed attribute
+      - .get_password_data: planned value cty.False for a non-computed attribute
+      - .cpu_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ebs_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .ephemeral_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .network_interface: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .root_block_device: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .enclave_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .metadata_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .private_dns_name_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .capacity_reservation_specification: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .instance_market_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+      - .maintenance_options: attribute representing nested block must not be unknown itself; set nested attribute values to unknown instead
+2024-02-05T22:35:08.553Z [INFO]  backend/local: plan operation completed

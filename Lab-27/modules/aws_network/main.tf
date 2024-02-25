@@ -1,4 +1,3 @@
-
 # Provision:
 #  - VPC
 #  - Internet Gateway
@@ -12,7 +11,6 @@ resource "aws_vpc" "main" {
   cidr_block = var.vpc_cidr
   tags       = merge(var.tags, { Name = "${var.env}-vpc" })
 }
-
 
 resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
@@ -28,7 +26,6 @@ resource "aws_subnet" "public_subnets" {
   map_public_ip_on_launch = true
   tags                    = merge(var.tags, { Name = "${var.env}-public-${count.index + 1}" })
 }
-
 
 resource "aws_route_table" "public_subnets" {
   vpc_id = aws_vpc.main.id
@@ -50,7 +47,7 @@ resource "aws_route_table_association" "public_routes" {
 #-----NAT Gateways with Elastic IPs--------------------------
 resource "aws_eip" "nat" {
   count  = length(var.private_subnet_cidrs)
-  domain ="vpc"
+  domain = "vpc"
   tags   = merge(var.tags, { Name = "${var.env}-nat-gw-${count.index + 1}" })
 }
 
@@ -70,7 +67,6 @@ resource "aws_subnet" "private_subnets" {
   availability_zone = data.aws_availability_zones.available.names[count.index]
   tags              = merge(var.tags, { Name = "${var.env}-private-${count.index + 1}" })
 }
-
 
 resource "aws_route_table" "private_subnets" {
   count  = length(var.private_subnet_cidrs)

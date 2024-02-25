@@ -21,7 +21,7 @@ resource "aws_instance" "my_server" {
       encrypted   = true
     }
   }
-
+  //volume_tags - (Optional) Map of tags to assign, at instance-creation time, to root and EBS volumes.
   volume_tags = { Name = "Disk-${var.env}" }
   tags        = { Name = "Server-${var.env}" }
 }
@@ -30,7 +30,6 @@ resource "aws_security_group" "my_server_sg" {
   name = "My Server Security Group"
   dynamic "ingress" {
     for_each = lookup(var.allow_port, var.env, var.allow_port["my_default"])
-
     content {
       from_port   = ingress.value
       to_port     = ingress.value

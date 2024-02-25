@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "my_ubuntu" {
   ami           = "ami-0c65adc9a5c1b5d7c"
   instance_type = "t3.micro"
-  key_name      = "Musa-key2-Mac"
+  # key_name      = "Musa-key2-Mac"
 
   tags = {
     Name    = "My-New-Ubuntu-Server"
@@ -14,6 +14,7 @@ resource "aws_instance" "my_ubuntu" {
   }
 }
 
+//if a default vpc does not exist, then terraform will create a default vpc, but won't delete it upon terraform destroy
 resource "aws_default_vpc" "default" {}
 
 resource "aws_instance" "my_amazon" {
@@ -22,7 +23,7 @@ resource "aws_instance" "my_amazon" {
 
   tags = {
     Name   = "My-Amazon-Server"
-    Owner  = "Musa Ejaz  "
+    Owner  = var.owner_name
     vpc_id = aws_default_vpc.default.id
   }
 }

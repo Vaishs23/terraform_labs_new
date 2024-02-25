@@ -26,7 +26,7 @@ resource "random_password" "main" {
   override_special = "#!()_"
 }
 
-// Store Password
+// Store Password, ssm = systems manager
 resource "aws_ssm_parameter" "rds_password" {
   name        = "/prod/prod-mysql-rds/password"
   description = "Master Password for RDS Database"

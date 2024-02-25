@@ -1,10 +1,92 @@
-terrafoerm state list -> Lists out all the resources that are tracked in the current state file
+terraform state list -> Lists out all the resources that are tracked in the current state file
+terraform state show <name of resource> shows the resources by name from state file
+terraform state pull, this command prints the contents of the state file onto your terminal
+terraform state pull > state.tfstate -> Gets the current state and outputs it to a local file. This will create a file named state.tfstate with the contents of the terraform.tfstate file copied into it.
+terraform validate: The terraform validate command validates the configuration files in a directory, referring only to the configuration and not accessing any remote services such as remote state, provider APIs, etc.
+terraform output: command will display all the outputs in the state file
+terraform show: The terraform show command is used to provide human-readable output from a state or plan file. This can be used to inspect a plan to ensure that the planned operations are expected, or to inspect the current state as Terraform sees it.
+
+dangerous commands:
+1. terraform state rm
+2. terraform state mv
+3. terraform state push [options] PATH, will push your locally stored tfstate file to remote backend if you have one configured
+
+terraform state mv -state-out="terraform.tfstate" aws_eip.prod aws_eip.prod
+this state is moving the resource aws_eip.prod into terraform.state and also naming the resource aws_eip.prod
+
+terraform apply -target=aws_instance.web -auto-approve: this command will only perform terraform apply to the aws_instance.web and it will also auto approve. Targetting a resource this way will not cause the whole infrastructure to refresh state
+
+The terraform get command is used to download and update modules mentioned in the root module.
+
+terraform state rm -> will delete the contents from the state file
 
 terraform refresh -> command reads the current settings from all managed remote objects and updates the Terraform state to match. This won't modify your real remote objects, but it will modify the Terraform state
 
 terraform destroy -target aws_instance.web_server -> this will only destory the resource that has been specified
 
-terraform state pull > state.tfstate -> Gets the current state and outputs it to a local file. This will create a file named state.tfstate with the contents of the terraform.tfstate file copied into it.
+terraform console: The terraform console command provides an interactive console for evaluating expressions.
 
 terraform output —> List all the outputs currently held in your state file
 
+values() function in terrform will only print values from an object/map
+
+how to se count and count.index
+resource "aws_iam_user" "user" {
+  count = length(var.iam_users)
+  name  = element(var.iam_users, count.index)
+}
+
+
+how to use foreach and each.value
+resource "aws_iam_user" "user" {
+  for_each = toset(var.aws_users)
+  name     = each.value
+}
+
+
+The for_each Object:
+each.key — The map key (or set member) corresponding to this instance.
+each.value — The map value corresponding to this instance. (If a set was provided, this is the same as each.key.)
+
+
+values() takes a map and returns a list containing the values of the elements in that map.
+> values({a=3, c=2, d=1})
+[
+  3,
+  2,
+  1,
+]
+
+terraform taint - The terraform taint command informs Terraform that a particular object has become degraded or damaged. Terraform represents this by marking the object as "tainted" in the Terraform state, and Terraform will propose to replace it in the next plan you create.
+Another method apart from taint is:
+terraform apply -replace <resource name> -> doing this will cause terraform to recreate that resource
+can also be written as: terraform apply -replace="aws_instance.example[0]"
+
+
+
+Terraform Workspace commands:
+terraform workspace show
+terraform workspace list
+terraform workspace new <name of workspace>
+terraform workspace select <name of workspace>
+terraform workspace delete <name of workspace>
+tag your resources by ${terraform.workspace} to differentiate between the resources you deploy
+Don't use workspaces for deployment of stagging, dev and prod. Only use it for testing
+
+
+Global Variables:
+If you want to use some global variables in different folders/files, then write the variables in a module as outputs and just call that module in different files in your tree
+
+
+read about dependency lock file
+
+Terraform has following block types: terraform, provider, resource, variable, locals, data, module, output, and provisioner
+
+. Terraform is available for:- macOS, Windows, Linux, FreeBSD, OpenBSD, and Solaris.
+
+Backend types support state locking:- local, remote, azurerm, consul, cos, gcs, http, kubernetes, oss, pg, s3, etcdv3, manta, swift
+Backend types doesn’t support state locking:- artifactory, etcd
+
+
+
+ terraform providers mirror ../ --- The terraform providers mirror command downloads the providers required for the current configuration and copies them into a directory in the local filesystem

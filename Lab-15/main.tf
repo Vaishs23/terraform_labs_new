@@ -3,6 +3,7 @@
 #  Launch Configuration with Auto AMI Lookup
 #  Auto Scaling Group using 2 availability zones
 #  Classis load balanacer in 2 available zones
+//same as Lab-14 but created outputs.tf file
 
 provider "aws" {
   region = var.aws_region
@@ -103,7 +104,7 @@ resource "aws_elb" "web" {
     interval            = 10
   }
 
-  tags = merge(var.tags, { Name  = "Webserver-HighlyAvailable-ELB"} )
+  tags = merge(var.tags, { Name = "Webserver-HighlyAvailable-ELB" })
   //merge is a terraform function to merge the two tags 
 }
 

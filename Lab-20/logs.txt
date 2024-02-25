@@ -1,0 +1,23 @@
+2024-02-04T22:29:36.644Z [INFO]  Terraform version: 1.6.6
+2024-02-04T22:29:36.645Z [INFO]  Go runtime version: go1.21.5
+2024-02-04T22:29:36.645Z [INFO]  CLI args: []string{"terraform", "init"}
+2024-02-04T22:29:36.646Z [INFO]  CLI command args: []string{"init"}
+2024-02-05T00:08:15.101Z [INFO]  Terraform version: 1.6.6
+2024-02-05T00:08:15.103Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T00:08:15.103Z [INFO]  CLI args: []string{"terraform", "init", "-upgrade"}
+2024-02-05T00:08:15.106Z [INFO]  CLI command args: []string{"init", "-upgrade"}
+2024-02-05T17:49:30.976Z [INFO]  Terraform version: 1.6.6
+2024-02-05T17:49:30.976Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T17:49:30.976Z [INFO]  CLI args: []string{"terraform", "init", "-from-module={MODULE-SOURCE}"}
+2024-02-05T17:49:30.979Z [INFO]  CLI command args: []string{"init", "-from-module={MODULE-SOURCE}"}
+2024-02-05T17:57:40.746Z [INFO]  Terraform version: 1.6.6
+2024-02-05T17:57:40.747Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T17:57:40.747Z [INFO]  CLI args: []string{"terraform", "apply", "-destroy"}
+2024-02-05T17:57:40.749Z [INFO]  CLI command args: []string{"apply", "-destroy"}
+2024-02-05T17:57:41.128Z [INFO]  backend/local: starting Apply operation
+2024-02-05T17:57:41.136Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T17:57:41.300Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T17:57:41.300Z
+2024-02-05T17:57:41.742Z [INFO]  provider: configuring client automatic mTLS
+2024-02-05T17:57:41.849Z [INFO]  provider.terraform-provider-aws_v5.35.0_x5: configuring server automatic mTLS: timestamp=2024-02-05T17:57:41.848Z
+2024-02-05T17:57:41.928Z [INFO]  backend/local: apply calling Plan
+2024-02-05T17:57:41.961Z [INFO]  backend/local: apply calling Apply

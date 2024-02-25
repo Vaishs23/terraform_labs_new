@@ -42,7 +42,7 @@ resource "aws_instance" "server" {
 }
 
 resource "aws_instance" "bastian_server" {
-  for_each         = var.create_bastian == "YES" ? toset(["bastion"]) : []
+  for_each      = var.create_bastian == "YES" ? toset(["bastion"]) : []
   ami           = "ami-0e472933a1395e172"
   instance_type = "t3.micro"
   tags = {

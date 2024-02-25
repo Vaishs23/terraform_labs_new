@@ -12,11 +12,11 @@ resource "aws_instance" "servers" {
   }
 }
 
+//element(list, index) retrieves a single element from a list.
 resource "aws_iam_user" "user" {
   count = length(var.iam_users)
   name  = element(var.iam_users, count.index)
 }
-
 //this way of creating users isn't ideal as it will change the users if you delete one user from the list of iam users
 
 resource "aws_instance" "bastian_server" {

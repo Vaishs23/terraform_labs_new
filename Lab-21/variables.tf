@@ -39,4 +39,3 @@ variable "server_settings" {
 variable "create_bastian" {
   default = "YES"
 }
-

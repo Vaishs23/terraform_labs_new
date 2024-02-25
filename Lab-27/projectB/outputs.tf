@@ -7,6 +7,6 @@ output "server_loop_count_ip" {
 }
 
 
-output "server_foreach_ip" {
-  value = values(module.servers_loop_foreach)[*].web_server_public_ip
-}
+# output "server_foreach_ip" {
+#   value = values(module.servers_loop_foreach)[*].web_server_public_ip
+# }

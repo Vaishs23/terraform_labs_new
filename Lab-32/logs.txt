@@ -1,0 +1,14 @@
+2024-02-05T18:10:29.939Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:10:29.939Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:10:29.939Z [INFO]  CLI args: []string{"terraform", "output"}
+2024-02-05T18:10:29.941Z [INFO]  CLI command args: []string{"output"}
+2024-02-05T18:10:29.994Z [INFO]  backend-s3.aws-base: Retrieved credentials: tf_backend.operation=Configure tf_backend.req_id=e8537ffd-8383-6f94-2113-aec245d1f12b tf_backend.s3.bucket=my---buckeeettt tf_backend.s3.path=prod/terraform.tfstate tf_aws.credentials_source=EnvConfigCredentials
+2024-02-05T18:10:30.157Z [INFO]  backend-s3.aws-base: Retrieved caller identity from STS: tf_backend.operation=Configure tf_backend.req_id=e8537ffd-8383-6f94-2113-aec245d1f12b tf_backend.s3.bucket=my---buckeeettt tf_backend.s3.path=prod/terraform.tfstate
+2024-02-05T18:10:30.174Z [INFO]  backend-s3.aws-base: Retrieved caller identity from STS: tf_backend.operation=Configure tf_backend.req_id=e8537ffd-8383-6f94-2113-aec245d1f12b tf_backend.s3.bucket=my---buckeeettt tf_backend.s3.path=prod/terraform.tfstate
+2024-02-05T18:17:02.668Z [INFO]  Terraform version: 1.6.6
+2024-02-05T18:17:02.668Z [INFO]  Go runtime version: go1.21.5
+2024-02-05T18:17:02.668Z [INFO]  CLI args: []string{"terraform", "show"}
+2024-02-05T18:17:02.671Z [INFO]  CLI command args: []string{"show"}
+2024-02-05T18:17:02.684Z [INFO]  backend-s3.aws-base: Retrieved credentials: tf_backend.operation=Configure tf_backend.req_id=d02c3ce0-e55c-fbe3-6887-215e54563504 tf_backend.s3.bucket=my---buckeeettt tf_backend.s3.path=prod/terraform.tfstate tf_aws.credentials_source=EnvConfigCredentials
+2024-02-05T18:17:02.837Z [INFO]  backend-s3.aws-base: Retrieved caller identity from STS: tf_backend.operation=Configure tf_backend.req_id=d02c3ce0-e55c-fbe3-6887-215e54563504 tf_backend.s3.bucket=my---buckeeettt tf_backend.s3.path=prod/terraform.tfstate
+2024-02-05T18:17:02.854Z [INFO]  backend-s3.aws-base: Retrieved caller identity from STS: tf_backend.operation=Configure tf_backend.req_id=d02c3ce0-e55c-fbe3-6887-215e54563504 tf_backend.s3.bucket=my---buckeeettt tf_backend.s3.path=prod/terraform.tfstate
